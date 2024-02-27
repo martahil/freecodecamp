@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'fonteTituloPrincipal';
+    src: url("Fonts/GothamBold.ttf");
+}
+
+@font-face {
+    font-family: 'fonteBase';
+    src: url("Fonts/GothamLight.ttf");
+}
+
+@font-face {
+    font-family: 'descriptionFont';
+    src: url("Fonts/Gotham-XLight.otf");
+}
+
+@font-face {
+    font-family: 'learnMoreFont';
+    src: url("Fonts/Gotham-Thin.otf");
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #121212;
+    margin: 0px;
+    padding: 0px;
+    color: #FEFEFE;
+}
+
+.leftAndRight {
+    background-color: #121212;
+    height: 86%;
+    width: 100%;
+    display: flex;
+    font-family: fonteBase;
+}
+
+.left {
+
+    background-color: #040404;
+    height: 100%;
+    width: 20%;
+    /* font-family: 'fonteBase'; */
+    color: #FEFEFE;
+}
+
+.left p {
+    padding-left: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 65%;
+    display: flex;
+    white-space: nowrap;
+}
+
+.commingSoonList li {
+    font-family: descriptionFont;
+    list-style: none;
+    font-size: 55%;
+    line-height: 18px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.rigth {
+    background-color: #121212;
+    height: 100%;
+    width: 80%;
+}
+
+.top {
+    background-color: #121212;
+    height: 25%;
+    /* width: 100%; */
+    font-family: fonteTituloPrincipal;
+    font-size: 50px;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    white-space: nowrap;    
+    align-items: center;
+    padding-left: 50px;
+}
+
+.mainContent {
+    background-color: #262626;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    
+}
+
+.individualPost {
+    margin-top: 20px;
+}
+
+#post1 {
+    margin-left: 50px;
+}
+
+#post2 {
+    margin-left: 50px;
+}
+
+.squarePost {
+    height: 150px;
+    width: 250px;
+}
+
+.linkPost {
+    font-family: fonteBase;
+    font-size: 150%;
+    color: #FEFEFE;
+    padding-top: 15%;
+}
+
+.squarePost a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.squarePost a:hover {
+    text-decoration: underline;
+}
+
+#squarePost1 {
+    background-image: linear-gradient(to right, #f9d423 0%, #f83600 100%);
+}
+
+#squarePost2 {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+}
+
+
+h1 {
+    font-size: 100%;
+}
+
+h2 {
+    font-family: descriptionFont;
+    font-size: 60%;
+}
+
+.learnMore {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.learnMore p {
+    font-family: descriptionFont;
+    font-size: 60%;
+}
+
+.plusCircle {
+    flex-shrink: 0;
+    /* height: 100%; */
+    width: 10px;
+    height: 10px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.learnMoreTxt {
+    border-radius: 12px;
+    padding: 12px;
+    width: 220px;
+    z-index: 3;
+    position: relative;
+}
+
+.textoEscondido {
+    width: 220px;
+    font-family: descriptionFont;
+    font-size: 8px;
+    text-align: justify;
+    text-indent: 15px;
+    display: none;
+}
+
+.bottom {
+    height: 14%;
+    width: 100%;
+    text-align: center;
+    background-color: #121212;
+    font-family: descriptionFont;
+    font-size: 60%;
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+    line-height: 2.5px;
+}
+
+.bottom p {
+    position: relative;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #FEFEFE; */
+}
+
+.footerLinks a {
+    color: #FEFEFE;
+}
+
+.footerLinks img {
+    padding-right: 5px;
+}
+
+
+
+/*GRADIENTS OPTIONS:
+
+#squarePost1 {
+    background-image: linear-gradient(to right, #f9d423 0%, #f83600 100%);
+}
+
+#squarePost2 {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+}
+
+#squarePost3 {
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+}
+
+#squarePost4 {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
+#squarePost5 {
+    background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+}
+*/
