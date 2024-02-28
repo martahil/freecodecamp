@@ -15,8 +15,11 @@ function expandirTexto1() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            padding: '12px',
-            width: '220px',
+            paddingRigth: '12px',
+            paddingLeft: '24px',
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            width: '440px',
             zIndex: '3',
             position: 'relative'
         });
@@ -50,8 +53,11 @@ function expandirTexto2() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            padding: '12px',
-            width: '220px',
+            paddingRigth: '12px',
+            paddingLeft: '24px',
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            width: '440px',
             zIndex: '3',
             position: 'relative'
         });
