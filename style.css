@@ -35,7 +35,7 @@ html {
     font-family: fonteBase;
 }
 
-.left {
+.leftSide {
 
     background-color: #040404;
     height: 100%;
@@ -44,7 +44,7 @@ html {
     color: #FEFEFE;
 }
 
-.left p {
+.leftSide p {
     padding-left: 80px;
     padding-top: 50px;
     font-weight: bold;
@@ -79,15 +79,14 @@ html {
     /* flex-wrap: nowrap; */
     white-space: nowrap;    
     align-items: center;
-    padding-left: 50px;
+    padding-left: 10 0px;
 }
 
 .mainContent {
     background-color: #262626;
     height: 75%;
     width: 100%;
-    display: flex;
-    
+    display: flex;    
 }
 
 .individualPost {
@@ -103,6 +102,10 @@ html {
 }
 
 #post3 {
+    margin-left:100px;
+}
+
+#post4 {
     margin-left:100px;
 }
 
@@ -140,6 +143,10 @@ html {
     background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
 }
 
+#squarePost4 {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+
 
 h1 {
     font-size: 200%;
@@ -171,13 +178,13 @@ h2 {
     padding-left: 10px;
 }
 
-.learnMoreTxt {
+/*.learnMoreTxt {
     border-radius: 12px;
-    padding: 24px; /*12px*/
-    width: 440px; /*220px*/
+    padding: 24px; 
+    width: 440px; 
     z-index: 3;
     position: relative;
-}
+}*/
 
 .textoEscondido {
     width: 440px; /*220px*/
@@ -219,7 +226,53 @@ h2 {
     padding-right: 10px;
 }
 
+/*Scroll Bar*/
+.mainContent {
+    /* width: 800px;  */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative; 
 
+    margin: 0 auto;
+}
+
+.scrollable-div {
+    display: inline-block;
+    width: 300px;
+    height: 200px; 
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.arrow.left {
+    left:20.5%;  
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.imgRigthArrow {
+    height: 50px;   
+    width: 50px;
+}
+
+.imgLeftArrow {
+    height: 50px; 
+    width: 50px;
+}
+/*Scroll Bar*/
 
 /*GRADIENTS OPTIONS:
 

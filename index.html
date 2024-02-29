@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="styleScrollBar.css"/>
     <title>Document</title>
 </head>
 
@@ -12,17 +13,16 @@
 
     <div class="leftAndRight">
 
-        <div class="left">
+        <div class="leftSide">
 
             <p>Comming soon:</p>
 
             <ul class="commingSoonList">
-                <li class="liLeft">Music Player</li>
                 <li class="liLeft">Palindrome Checker Project</li>
                 <li class="liLeft">Football Team Cards</li>
                 <li class="liLeft">Decimal to Binary Converter</li>
                 <li class="liLeft">Roman Numeral Converter</li>
-                <li class="liLeft">Number Sorter</li>  
+                <li class="liLeft">Number Sorter</li>
                 <li class="liLeft">Statistics Calculator</li>
                 <li class="liLeft">Spam Filter</li>
                 <li class="liLeft">Telefhone Number Validator</li>
@@ -33,12 +33,19 @@
                 <li class="liLeft">Pokémon Search App Project</li>
             </ul>
 
-        </div> <!-- left -->
+        </div> <!-- leftSide -->
 
         <div class="rigth">
 
             <div class="top">JavaScript Applications</div>
             <div class="mainContent">
+                
+                <div class="arrow left">
+                <img src="Images/leftArrow.svg" alt="" class="imgLeftArrow">
+                </div>
+                <div class="arrow right">
+                <img src="Images/rigthArrow.svg" alt="" class="imgRigthArrow">
+                </div>
 
                 <div class="individualPost" id="post1">
 
@@ -71,7 +78,7 @@
                 <div class="individualPost" id="post2">
                     <div class="squarePost" id="squarePost2">
                         <a class="linkPost" href="Calorie Counter/index.html">Click here <br/>
-                            to count your daily calories &#8282;&#41;</a>
+                            to count your <br/> daily calories &#8282;&#41;</a>
                     </div> <!-- squarePost -->
 
                     <h1>Calorie Counter</h1>
@@ -93,7 +100,7 @@
                         </p>
                     </div>
 
-                </div> <!-- post3 -->
+                </div> <!-- post2 -->
 
                 <div class="individualPost" id="post3">
                     <div class="squarePost" id="squarePost3">
@@ -112,16 +119,43 @@
                     </div> <!-- learnMore -->
                     <div class="learnMoreTxt" id="learnMoreTxt3">
                         <p id="textoEscondido3" class="textoEscondido">
-                            In order to make a Player Music, it was learned some essential string and array methods like the find(), 
-                            forEach(), map(), and join(). 
-                            The project covers fundamental concepts such as handling audio playback, managing a playlist, 
-                            implementing play, pause, next, previous, and shuffle functionalities. 
-                            To do that, it was worked on how to dynamically update the user interface based on the current song.
+                            In order to make a Player Music, it was learned some essential string and array methods like
+                            the find(),
+                            forEach(), map(), and join().
+                            The project covers fundamental concepts such as handling audio playback, managing a
+                            playlist,
+                            implementing play, pause, next, previous, and shuffle functionalities.
+                            To do that, it was worked on how to dynamically update the user interface based on the
+                            current song.
                         </p>
                     </div>
 
-                </div> <!-- post3 -->
+                </div> <!-- post4 -->
 
+                <div class="individualPost" id="post4" style="margin-right: 100px;">
+                    <div class="squarePost" id="squarePost4">
+                        <a class="linkPost" href="Date Formatter/index.html">What is <br/>today's date?</a>
+                    </div> <!-- squarePost -->
+
+                    <h1>Date Formatter</h1>
+                    <h2>This app offers different formats for the current date</h2>
+                    <div class="learnMore">
+                        <p onclick="expandirTexto4()">Learn more</p>
+                        <div class="plusCircle">
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto4()"
+                                id="plusCircle4" />
+                        </div> <!-- plusCircle -->
+                    </div> <!-- learnMore -->
+                    <div class="learnMoreTxt" id="learnMoreTxt4">
+                        <p id="textoEscondido4" class="textoEscondido">
+                            In this challenge, it was explored various methods, formats, 
+                            and time zones. The project covered JavaScript Date object, including 
+                            its methods and properties. It was also learn how to correctly format dates.
+                            The application approached concepts such as the getDate(), getMonth(), and getFullYear() methods.
+                        </p>
+                    </div>
+
+                </div> <!-- post4 -->
 
             </div> <!-- mainContent -->
 
@@ -143,7 +177,7 @@
         </div>
         <div class="footerLinks">
             <img src="Images/githubLogo.png" style="height: 30px;">
-            <a href="https://github.com/martahil/freecodecamp" target="_blank">GitHub</a> 
+            <a href="https://github.com/martahil/freecodecamp" target="_blank">GitHub</a>
         </div>
 
     </div> <!-- bottom -->
