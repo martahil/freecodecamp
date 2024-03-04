@@ -169,4 +169,42 @@ function expandirTexto4() {
     }
 }
 
+function expandirTexto5() {
+    var texto = document.getElementById('textoEscondido5');
+    var learnMoreTxt = document.getElementById('learnMoreTxt5')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRigth: '12px',
+            paddingLeft: '24px',
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            width: '440px',
+            zIndex: '3',
+            position: 'relative'
+        });
+
+
+        if (document.getElementById("plusCircle5").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle5").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle5").src = "Images/plusCircle.png";
+    }
+}
+
 
