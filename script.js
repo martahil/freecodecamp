@@ -34,14 +34,12 @@ function expandirTexto1() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            /*marginRigth: '24px',
-            paddingRighth: '25px',
+            paddingRight: '24px',
             paddingLeft: '24px',
             paddingTop: '12px',
-            paddingBottom: '12px',*/
-            // width: '440px',
-            // zIndex: '3',
-            // position: 'relative'
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
         });
 
         if (document.getElementById("plusCircle1").src = "Images/plusCircle.png") {
@@ -73,15 +71,13 @@ function expandirTexto2() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            /*paddingRigth: '12px',
+            paddingRight: '24px',
             paddingLeft: '24px',
-            paddingTop: '10px',
-            paddingBottom: '10px',
-            // width: '440px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
             zIndex: '3',
-            position: 'relative'*/
+            position: 'relative'
         });
-
 
         if (document.getElementById("plusCircle2").src = "Images/plusCircle.png") {
             document.getElementById("plusCircle2").src = "Images/minusCircle.png";
@@ -111,15 +107,13 @@ function expandirTexto3() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            /*paddingRigth: '12px',
+            paddingRight: '24px',
             paddingLeft: '24px',
-            paddingTop: '10px',
-            paddingBottom: '10px',
-            // width: '440px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
             zIndex: '3',
-            position: 'relative'*/
+            position: 'relative'
         });
-
 
         if (document.getElementById("plusCircle3").src = "Images/plusCircle.png") {
             document.getElementById("plusCircle3").src = "Images/minusCircle.png";
@@ -149,15 +143,13 @@ function expandirTexto4() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            /*paddingRigth: '12px',
+            paddingRight: '24px',
             paddingLeft: '24px',
-            paddingTop: '10px',
-            paddingBottom: '10px',
-            // width: '440px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
             zIndex: '3',
-            position: 'relative'*/
+            position: 'relative'
         });
-
 
         if (document.getElementById("plusCircle4").src = "Images/plusCircle.png") {
             document.getElementById("plusCircle4").src = "Images/minusCircle.png";
@@ -187,16 +179,14 @@ function expandirTexto5() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            /*paddingRigth: '12px',
+            paddingRight: '24px',
             paddingLeft: '24px',
-            paddingTop: '10px',
-            paddingBottom: '10px',
-            // width: '440px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
             zIndex: '3',
-            position: 'relative'*/
+            position: 'relative'
         });
-
-
+        
         if (document.getElementById("plusCircle5").src = "Images/plusCircle.png") {
             document.getElementById("plusCircle5").src = "Images/minusCircle.png";
         }
