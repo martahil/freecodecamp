@@ -10,7 +10,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-top: 150px;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
