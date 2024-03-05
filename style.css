@@ -20,12 +20,7 @@
 
 @font-face {
     font-family: 'generalText';
-    src: url("Fonts/Gotham-Thin.otf");
-}
-
-@font-face {
-    font-family: 'generalText';
-    src: url("test_fonts/GothamBook.ttf");
+    src: url("fonts/GothamBook.ttf");
 }
 
 body,
