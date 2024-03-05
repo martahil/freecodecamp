@@ -34,13 +34,14 @@ function expandirTexto1() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            paddingRigth: '12px',
+            /*marginRigth: '24px',
+            paddingRighth: '25px',
             paddingLeft: '24px',
-            paddingTop: '10px',
-            paddingBottom: '10px',
-            width: '440px',
-            zIndex: '3',
-            position: 'relative'
+            paddingTop: '12px',
+            paddingBottom: '12px',*/
+            // width: '440px',
+            // zIndex: '3',
+            // position: 'relative'
         });
 
         if (document.getElementById("plusCircle1").src = "Images/plusCircle.png") {
@@ -72,13 +73,13 @@ function expandirTexto2() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            paddingRigth: '12px',
+            /*paddingRigth: '12px',
             paddingLeft: '24px',
             paddingTop: '10px',
             paddingBottom: '10px',
-            width: '440px',
+            // width: '440px',
             zIndex: '3',
-            position: 'relative'
+            position: 'relative'*/
         });
 
 
@@ -110,13 +111,13 @@ function expandirTexto3() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            paddingRigth: '12px',
+            /*paddingRigth: '12px',
             paddingLeft: '24px',
             paddingTop: '10px',
             paddingBottom: '10px',
-            width: '440px',
+            // width: '440px',
             zIndex: '3',
-            position: 'relative'
+            position: 'relative'*/
         });
 
 
@@ -148,13 +149,13 @@ function expandirTexto4() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            paddingRigth: '12px',
+            /*paddingRigth: '12px',
             paddingLeft: '24px',
             paddingTop: '10px',
             paddingBottom: '10px',
-            width: '440px',
+            // width: '440px',
             zIndex: '3',
-            position: 'relative'
+            position: 'relative'*/
         });
 
 
@@ -186,13 +187,13 @@ function expandirTexto5() {
         Object.assign(learnMoreTxt.style, {
             backgroundColor: '#040404',
             borderRadius: '12px',
-            paddingRigth: '12px',
+            /*paddingRigth: '12px',
             paddingLeft: '24px',
             paddingTop: '10px',
             paddingBottom: '10px',
-            width: '440px',
+            // width: '440px',
             zIndex: '3',
-            position: 'relative'
+            position: 'relative'*/
         });
 
 
