@@ -53,7 +53,6 @@ function expandirTexto1() {
     }
 }
 
-
 function expandirTexto2() {
     var texto = document.getElementById('textoEscondido2');
     var learnMoreTxt = document.getElementById('learnMoreTxt2')
@@ -233,4 +232,41 @@ function expandirTexto6() {
         document.getElementById("plusCircle6").src = "Images/plusCircle.png";
     }
 }
+
+function expandirTexto7() {
+    var texto = document.getElementById('textoEscondido7');
+    var learnMoreTxt = document.getElementById('learnMoreTxt7')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle7").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle7").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle7").src = "Images/plusCircle.png";
+    }
+}
+
 
