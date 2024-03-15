@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Arabic to Roman</title>
+</head>
+
+
+
+<body>
+
+    <div class="backButton">
+        <a href="../index.html">
+          <img class="backIcon" src="../Images/backbutton.svg">
+        </a>
+      </div>
+
+    <div class="main">
+
+    <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp Logo">
+    <h1>Roman Numeral Converter</h1>
+
+    <div class="form">
+        <label for="number">Enter a Number:</label>
+        <input id="number"></input>
+        <button id="convert-btn" onclick="converter()">Convert</button>
+    </div>
+    <div id="output"></div>
+
+</div>
+
+</body>
+
+<script>
+
+    function converter() {
+        var numberInput = document.getElementById('number'); /*.value included*/
+        var result = document.getElementById('output');
+        var romanNum = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
+        var inputNumArray = [0, 0, 0, 0];
+
+        result.innerText = "";
+
+        if (numberInput.value === '') {
+            result.innerText = "Please enter a valid number";
+            return; // stop further execution
+        }
+        if (numberInput.value < 1) {
+            result.innerText = "Please enter a number greater than or equal to 1";
+            return; // stop further execution
+        }
+        if (numberInput.value >= 4000) {
+            result.innerText = "Please enter a number less than or equal to 3999";
+            return; // stop further execution
+        }
+
+        function arrayArabicNum() {
+            var numString = numberInput.value.toString();
+            var startIdx = Math.max(0, 4 - numString.length);
+            for (let i = 0; i < numString.length; i++) {
+                inputNumArray[startIdx + i] = parseInt(numString.charAt(i));
+            }
+            return inputNumArray;
+        }
+
+        function thousand() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[0]);
+            result.innerText += romanNum[6].repeat(lastDigit);
+        }
+        if (arrayArabicNum()[0] === 1 || arrayArabicNum()[0] === 2 || arrayArabicNum()[0] === 3) {
+            thousand();
+        }
+
+        function nineHundred() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[1]);
+            result.innerText += romanNum[4] + romanNum[6];
+        }
+        if (arrayArabicNum()[1] === 9) {
+            nineHundred();
+        }
+
+        function fiveHundred() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[1]);
+            result.innerText += romanNum[5];
+        }
+        if (arrayArabicNum()[1] === 5 || arrayArabicNum()[1] === 6 || arrayArabicNum()[1] === 7 || arrayArabicNum()[1] === 8) {
+            fiveHundred();
+        }
+
+        function sixhundredSevenhundredEigthhundred() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[1]);
+            result.innerText += romanNum[4].repeat(lastDigit - 5);
+        }
+        if (arrayArabicNum()[1] === 6 || arrayArabicNum()[1] === 7 || arrayArabicNum()[1] === 8) {
+            sixhundredSevenhundredEigthhundred();
+        }
+
+        function fourHundred() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[1]);
+            result.innerText += romanNum[4] + romanNum[5];
+        }
+        if (arrayArabicNum()[1] === 4) {
+            fourHundred();
+        }
+
+        function hundred() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[1]);
+            result.innerText += romanNum[4].repeat(lastDigit);
+        }
+        if (arrayArabicNum()[1] === 1 || arrayArabicNum()[1] === 2 || arrayArabicNum()[1] === 3) {
+            hundred();
+        }
+
+        function ninety() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[2]);
+            result.innerText += romanNum[2] + romanNum[4];
+        }
+        if (arrayArabicNum()[2] === 9) {
+            ninety();
+        }
+
+        function fifty() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[2]);
+            result.innerText += romanNum[3];
+        }
+        if (arrayArabicNum()[2] === 5 || arrayArabicNum()[2] === 6 || arrayArabicNum()[2] === 7 || arrayArabicNum()[2] === 8) {
+            fifty();
+        }
+
+        function sixtySeventyEigthy() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[2]);
+            result.innerText += romanNum[2].repeat(lastDigit - 5);
+        }
+        if (arrayArabicNum()[2] === 6 || arrayArabicNum()[2] === 7 || arrayArabicNum()[2] === 8) {
+            sixtySeventyEigthy();
+        }
+
+        function fourty() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[2]);
+            result.innerText += romanNum[2] + romanNum[3];
+        }
+        if (arrayArabicNum()[2] === 4) {
+            fourty();
+        }
+
+        function ten() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[2]);
+            result.innerText += romanNum[2].repeat(lastDigit);
+        }
+        if (arrayArabicNum()[2] === 1 || arrayArabicNum()[2] === 2 || arrayArabicNum()[2] === 3) {
+            ten();
+        }
+
+        function nine() {
+            var numArray = arrayArabicNum();
+            result.innerText += romanNum[0] + romanNum[2];
+        }
+        if (arrayArabicNum()[3] === 9) {
+            nine();
+        }
+
+        function sixSevenEigth() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[3]);
+            result.innerText += romanNum[1] + romanNum[0].repeat(lastDigit - 5);
+        }
+        if (arrayArabicNum()[3] === 6 || arrayArabicNum()[3] === 7 || arrayArabicNum()[3] === 8) {
+            sixSevenEigth();
+        }
+
+        function five() {
+            var numArray = arrayArabicNum();
+            result.innerText += romanNum[1];
+        }
+        if (arrayArabicNum()[3] === 5) {
+            five();
+        }
+
+        function four() {
+            var numArray = arrayArabicNum();
+            result.innerText += romanNum[0] + romanNum[1];
+        }
+        if (arrayArabicNum()[3] === 4) {
+            four();
+        }
+
+        function oneTwoThree() {
+            var numArray = arrayArabicNum();
+            var lastDigit = parseInt(numArray[3]);
+            result.innerText += romanNum[0].repeat(lastDigit);
+        }
+        if (arrayArabicNum()[3] === 1 || arrayArabicNum()[3] === 2 || arrayArabicNum()[3] === 3) {
+            oneTwoThree();
+        }
+
+    }
+
+</script>
+
+</html>

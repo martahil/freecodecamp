@@ -305,4 +305,40 @@ function expandirTexto8() {
     }
 }
 
+function expandirTexto9() {
+    var texto = document.getElementById('textoEscondido9');
+    var learnMoreTxt = document.getElementById('learnMoreTxt9')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle9").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle9").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle9").src = "Images/plusCircle.png";
+    }
+}
+
 
