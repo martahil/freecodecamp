@@ -413,3 +413,146 @@ function expandirTexto11() {
     }
 }
 
+function expandirTexto12() {
+    var texto = document.getElementById('textoEscondido12');
+    var learnMoreTxt = document.getElementById('learnMoreTxt12')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle12").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle12").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle12").src = "Images/plusCircle.png";
+    }
+}
+
+function expandirTexto13() {
+    var texto = document.getElementById('textoEscondido13');
+    var learnMoreTxt = document.getElementById('learnMoreTxt13')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle13").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle13").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle13").src = "Images/plusCircle.png";
+    }
+}
+
+function expandirTexto14() {
+    var texto = document.getElementById('textoEscondido14');
+    var learnMoreTxt = document.getElementById('learnMoreTxt14')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle14").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle14").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle14").src = "Images/plusCircle.png";
+    }
+}
+
+function expandirTexto15() {
+    var texto = document.getElementById('textoEscondido15');
+    var learnMoreTxt = document.getElementById('learnMoreTxt15')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle15").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle15").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle15").src = "Images/plusCircle.png";
+    }
+}

@@ -1,3 +1,7 @@
+body {
+  background-color: #1B1B32;
+}
+
 #container {
   display: grid;
   grid-template-columns: 50px repeat(10, 200px);
@@ -15,5 +19,5 @@
   height: 30px;
   margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: -50px;
+  margin-bottom: 35px;
 }
