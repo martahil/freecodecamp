@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="phone-container">
+        <h1>Telephone Number Validator</h1>
+        <label>Enter a Phone Number: </label> 
+        <input id= "user-input"></input>
+        
+        
+        <button id= "check-btn"  onclick="checkbtn()">Check</button>
+        
+        <button id="clear" onclick="clearbtn()">Clear</button>
+        
+        <div class= "result-div">
+            <p>test</p>
+        </div>
+        
+    </div>
+    
+</body>
+
+<script>
+
+function checkbtn() {
+          const numberInput = document.getElementById('user-input'); /*.value included*/
+        const result = document.getElementById('result-div');
+
+        result.innerText = "";
+
+       /* if (numberInput.value === '') {
+            result.innerText = "Please enter a valid number";
+            
+        }*/arguments
+
+  console.log('check btn clicked');
+}
+
+
+function clearbtn() {
+  console.log('clear');
+} 
+
+</script>
+
+</html>

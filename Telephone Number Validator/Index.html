@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Telephone Number Validator</title>
+</head>
+
+<body>
+
+    <div class="backButton">
+        <a href="../index.html">
+            <img class="backIcon" src="../Images/backbutton.svg">
+        </a>
+    </div>
+
+    <div class="mainContent">
+
+        <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo">
+
+        <h1>Telephone Number <br> Validator</h1>
+
+        <div class="phone-container">
+
+            <div class="phone-background">
+                <div class="phone-camera"></div>
+            </div>
+
+            <label>Enter a Phone Number: </label>
+
+            <input id="user-input"></input>
+
+            <div class="phone-footer">
+                <button id="check-btn" class="btn-styles" type="button">
+                    Check
+                </button>
+                <button id="clear-btn" class="btn-styles" type="button">
+                    Clear
+                </button>
+            </div>
+
+            <div id="results-div" class="results-text"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    const numInput = document.getElementById("user-input");
+    const result = document.getElementById("results-div");
+    const checkResultButton = document.getElementById("check-btn");
+    const clearResultButton = document.getElementById("clear-btn");
+
+    const item7Regex = /^1\s\d{3}-\d{3}-\d{4}$/; //1 555-555-5555
+    const item8Regex = /^1\s\(\d{3}\)\s\d{3}-\d{4}$/; //1 (555) 555-5555
+    const item9Regex = /^\d{10}$/; //5555555555 
+    const item10Regex = /^\d{3}-\d{3}-\d{4}$/; //555-555-5555
+    const item11Regex = /^\(\d{3}\)\d{3}-\d{4}$/; //(555)555-5555
+    const item12Regex = /^1\(\d{3}\)\d{3}-\d{4}$/; //1(555)555-5555
+    const item16Regex = /^1\s\d{3}\s\d{3}\s\d{4}$/; //1 555 555 5555
+    const item17Regex = /^1\s\d{3}\s\d{3}\s\d{4}$/; //1 456 789 4444
+
+    const validList = [item7Regex, item8Regex, item9Regex, item10Regex, item11Regex, item12Regex, item16Regex, item17Regex];
+    const isNumValid = (msg) => validList.some((regex) => regex.test(msg));
+
+    checkResultButton.addEventListener("click", () => {
+        if (numInput.value === "") {
+            alert("Please provide a phone number");
+            return;
+        }
+
+        result.textContent = isNumValid(numInput.value)
+            ? `Valid US number: ${numInput.value}`
+            : `Invalid US number: ${numInput.value}`;
+        numInput.value = "";
+    });
+
+    clearResultButton.addEventListener("click", () => {
+
+        result.innerText = "";
+    })
+
+</script>
+
+</body>

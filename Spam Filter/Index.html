@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Spam Filter</title>
+</head>
+
+<body>
+
+    <div class="backButton">
+        <a href="../index.html">
+            <img class="backIcon" src="../Images/backbutton.svg">
+        </a>
+    </div>
+
+    <div class="mainContent">
+
+        <header class="main-text">
+            <h1 class="title">Is this Spam?</h1>
+            <p class="description">
+                Enter a phrase to check if it would be marked as spam or not.
+            </p>
+        </header>
+
+        <main>
+            <label class="message-label" for="message-input">Message: </label>
+            <textarea placeholder="Enter message here" value="" type="text" name="message" id="message-input" rows="10"
+                cols="40"></textarea>
+            <button class="btn" id="check-message-btn" type="button">
+                Check message
+            </button>
+            <p id="result"></p>
+        </main>
+
+        <footer class="footer">&copy; freeCodeCamp</footer>
+
+        <p class="filterP">
+            Filtered items: <br>
+            /please help|assist me/i; <br>
+            /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i; <br>
+            /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i; <br>
+            /(?:^|\s)[s5][t7][o0][c{[(]k [a@4]l[e3]r[t7](?:$|\s)/i; <br>
+            /(?:^|\s)d[e3][a@4]r fr[i1|][e3]nd(?:$|\s)/i; <br>
+        </p>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+</body>
