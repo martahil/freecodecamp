@@ -593,3 +593,40 @@ function expandirTexto16() {
     }
 }
 
+function expandirTexto17() {
+    var texto = document.getElementById('textoEscondido17');
+    var learnMoreTxt = document.getElementById('learnMoreTxt17')
+
+    if (texto.style.display === 'none' || texto.style.display === '') {
+        texto.style.display = 'block';
+
+        /*learnMoreTxt.style.backgroundColor = '#040404';
+        learnMoreTxt.style.borderRadius = '12px';
+        learnMoreTxt.style.padding = '12px';
+        learnMoreTxt.style.width = '220px';
+        learnMoreTxt.style.zIndex = '3';
+        learnMoreTxt.style.position = "relative";*/
+
+        Object.assign(learnMoreTxt.style, {
+            backgroundColor: '#040404',
+            borderRadius: '12px',
+            paddingRight: '24px',
+            paddingLeft: '24px',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            zIndex: '3',
+            position: 'relative'
+        });
+        
+        if (document.getElementById("plusCircle17").src = "Images/plusCircle.png") {
+            document.getElementById("plusCircle17").src = "Images/minusCircle.png";
+        }
+    } else {
+        texto.style.display = 'none';
+        learnMoreTxt.style.backgroundColor = '#262626';
+
+        document.getElementById("plusCircle17").src = "Images/plusCircle.png";
+    }
+}
+
+
