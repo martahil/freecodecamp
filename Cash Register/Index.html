@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Cash Register</title>
+</head>
+
+<body>
+
+    <div class="backButton">
+        <a href="../index.html">
+            <img class="backIcon" src="../Images/backbutton.svg">
+        </a>
+    </div>
+
+    <main>
+
+        <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo" width="270px">
+
+        <h1>Cash Register Project</h1>
+
+        <label id="num01" class="num01">
+            <div class="ball">1</div>
+            <p class="pnum01">Choose one of four Cash Registers (CR): <br>
+                (they have different amount of money available)</p>
+        </label>
+
+        <div class="button01-container" id="button01-container">
+            <label class="lableCR">Cash-in-drawer (CID) 01</label>
+            <button id="button01" class="btn" onclick="showCidCase6_7()"
+                alt='This CR is used in the questions (stories) from 4 to 7 (of the "Build a Cash Register" project)'>Choose
+                CR 01</button>
+            <div id="cidCase6-7"></div>
+            <div class="captionBut01">This CR is used in the questions (stories) from 4 to 7 (of the "Build a Cash
+                Register" project)</div>
+        </div>
+
+        <div class="button02-container" id="button02-container">
+            <label class="lableCR">Cash-in-drawer (CID) 08</label>
+            <button id="button02" class="btn" onclick="showCid8()"
+                alt='This CR is used in the question (story) 8 (of the "Build a Cash Register" project)'>Choose CR
+                08</button>
+            <div id="cidCase8"></div>
+            <div class="captionBut02">This CR is used in the question (story) 8 (of the "Build a Cash Register" project)
+            </div>
+        </div>
+
+        <div class="button03-container" id="button03-container">
+            <label class="lableCR">Cash-in-drawer (CID) 09</label>
+            <button id="button03" class="btn" onclick="showCid9()"
+                alt='This CR is used in the question (story) 9 (of the "Build a Cash Register" project)'>Choose CR
+                09</button>
+            <div id="cidCase9"></div>
+            <div class="captionBut03">This CR is used in the question (story) 9 (of the "Build a Cash Register" project)
+            </div>
+        </div>
+
+        <div class="button04-container" id="button04-container">
+            <label class="lableCR">Cash-in-drawer (CID) 10</label>
+            <button id="button04" class="btn" onclick="showCid10()"
+                alt='This CR is used in the question (story) 10 (of the "Build a Cash Register" project)'>Choose CR
+                10</button>
+            <div id="cidCase10"></div>
+            <div class="captionBut04">This CR is used in the question (story) 10 (of the "Build a Cash Register"
+                project)</div>
+        </div>
+
+        <div id="change-due">Cash Register Feedback</div>
+
+        <div class="priceDiv">
+            <div class="ball">2</div>
+            <label class="priceLabel">Enter the price</label>
+            <input id="priceInput"></input>
+            <button class="btn" id="priceBtn" onclick="priceAdd()">Add Price</button>
+        </div>
+
+        <div class="customerCashDiv">
+            <div class="ball">3</div>
+            <label class="customerCashLabel">Enter cash from customer:</label>
+            <input id="cash"></input>
+            <button class="btn" id="purchase-btn" onclick="purchaseBtn()">Add Cash</button>
+        </div>
+
+        <div id="totalDiv" class="totalDivClass">
+            <p id="price-screen" class="price-screen">Total: -</p>
+        </div>
+
+        <div id="crStatusDiv">
+            <p id="crTxt">CR status: -</p>
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
