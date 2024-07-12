@@ -35,7 +35,7 @@ const displayAuthors = (authors) => {
       <img class="user-img" src="${image}" alt="${author} avatar">
       <div class="purple-divider"></div>
       <p class="bio">${bio.length > 50 ? bio.slice(0, 50) + '...' : bio}</p>
-      <a class="author-link" href="${url}" target="_blank">${author} author page</a>
+      <a class="author-link" href="${url}" target="_blank">${author}'s author page</a>
     </div>
   `;
   });
