@@ -55,6 +55,7 @@ function GeneralPokInfo() {
   const spriteUrl = data.sprites.front_default;
   img.id = 'sprite';
   img.src = spriteUrl;
+  img.alt = data.name + " front default sprite";
   document.getElementById('sprite-container').appendChild(img);
 
   //hp, attack, defense, special-attack, special-defense, speed

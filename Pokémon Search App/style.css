@@ -2,9 +2,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     background-color: #1b1b32;
-}
-
-main {
     display: flex;
     flex-direction: column;
     align-items: center;
