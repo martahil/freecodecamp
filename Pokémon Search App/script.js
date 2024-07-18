@@ -18,6 +18,7 @@ let img = document.createElement('img');
 
 let res;
 let data;
+let dataName;
 
 btn.addEventListener('click', function () {
   const input = document.getElementById('search-input').value.toLowerCase().replace(/[^a-zA-Z0-9\s-]/g, '');

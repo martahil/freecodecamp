@@ -13,84 +13,88 @@
 
 <body>
 
-    <!-- <div class="backButton">
-            <a href="../index.html">
-                <img class="backIcon" src="../Images/backbutton.svg">
-            </a>
-        </div> -->
+    <div id="backButton">
+        <a href="../index.html">
+            <img id="backIcon" src="../Images/backbutton.svg">
+        </a>
+    </div>
 
-    <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-        alt="freeCodeCamp Logo">
+    <main>
 
-    <h1>Pokémon Search App</h1>
+        <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo">
 
-    <div id="container">
+        <h1>Pokémon Search App</h1>
 
-        <div id="search-form">
-            <label for="search-input" id="label-search-input">Search for Pokémon Name or ID:</label>
+        <div id="container">
 
-            <form autocomplete="off">
+            <div id="search-form">
+                <label for="search-input" id="label-search-input">Search for Pokémon Name or ID:</label>
 
-                <div class="autocomplete" style="width:300px;">
-                    <div id="input-and-button">
-                        <input id="search-input" required>
-                        <button id="search-button" type="button">Search</button>
+                <form autocomplete="off">
+
+                    <div class="autocomplete" style="width:300px;">
+                        <div id="input-and-button">
+                            <input id="search-input" required>
+                            <button id="search-button" type="button">Search</button>
+                        </div>
                     </div>
+
+                </form>
+
+            </div>
+
+            <div id="top-container">
+                <div id="name-and-id">
+                    <div id="pokemon-name"></div>
+                    <div id="pokemon-id"></div>
                 </div>
 
-            </form>
+                <div id="size">
+                    <span id="weight"></span>
+                    <span id="height"></span>
+                </div>
 
-        </div>
+                <div id="sprite-container" class="sprite-container"></div>
 
-        <div id="top-container">
-            <div id="name-and-id">
-                <div id="pokemon-name"></div>
-                <div id="pokemon-id"></div>
+                <div id="types"></div>
             </div>
 
-            <div id="size">
-                <span id="weight"></span>
-                <span id="height"></span>
+            <div id="bottom-container">
+                <table>
+                    <th>Base</th>
+                    <th>Stats</th>
+
+                    <tr>
+                        <td>HP:</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack:</td>
+                        <td id='attack'></td>
+                    </tr>
+                    <tr>
+                        <td>Defense:</td>
+                        <td id='defense'></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Attack:</td>
+                        <td id='special-attack'></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Defense:</td>
+                        <td id='special-defense'></td>
+                    </tr>
+                    <tr>
+                        <td>Speed:</td>
+                        <td id='speed'></td>
+                    </tr>
+                </table>
             </div>
 
-            <div id="sprite-container" class="sprite-container"></div>
-
-            <div id="types"></div>
         </div>
 
-        <div id="bottom-container">
-            <table>
-                <th>Base</th>
-                <th>Stats</th>
-
-                <tr>
-                    <td>HP:</td>
-                    <td id="hp"></td>
-                </tr>
-                <tr>
-                    <td>Attack:</td>
-                    <td id='attack'></td>
-                </tr>
-                <tr>
-                    <td>Defense:</td>
-                    <td id='defense'></td>
-                </tr>
-                <tr>
-                    <td>Sp. Attack:</td>
-                    <td id='special-attack'></td>
-                </tr>
-                <tr>
-                    <td>Sp. Defense:</td>
-                    <td id='special-defense'></td>
-                </tr>
-                <tr>
-                    <td>Speed:</td>
-                    <td id='speed'></td>
-                </tr>
-            </table>
-        </div>
-
-    </div>
+    </main>
 
 </body>
 

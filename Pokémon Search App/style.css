@@ -1,7 +1,10 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-    background-color: #1b1b32;
+    background-color: #1b1b32;    
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +135,12 @@ td {
     background-color: #a55eea;
     padding: 8px;
     text-align: center;
+}
+
+#backIcon {
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 20px;    
 }
 
 /* Autocomplete: */
