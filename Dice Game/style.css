@@ -122,10 +122,3 @@ input[type="radio"]:disabled+label {
     width: 120px;
   }
 }
-
-.backIcon {
-  height: 30px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 35px;
-}

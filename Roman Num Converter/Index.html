@@ -5,33 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../backBtn.css" />
     <title>Arabic to Roman</title>
 </head>
 
-
-
 <body>
 
-    <div class="backButton">
-        <a href="../index.html">
-          <img class="backIcon" src="../Images/backbutton.svg">
-        </a>
-      </div>
+    <div class="backButton" style="margin-top: 25px; margin-left: 25px;">
+        <figure>
+            <a href="../index.html">
+                <img class="backIcon" src="../Images/backbutton.svg" alt="Home">
+                <figcaption style="width: 60px;">Home</figcaption>
+            </a>
+        </figure>
+    </div>
 
     <div class="main">
 
-    <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-        alt="freeCodeCamp Logo">
-    <h1>Roman Numeral Converter</h1>
+        <img class="freecodecamp-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo">
+        <h1>Roman Numeral Converter</h1>
 
-    <div class="form">
-        <label for="number">Enter a Number:</label>
-        <input id="number"></input>
-        <button id="convert-btn" onclick="converter()">Convert</button>
+        <div class="form">
+            <label for="number">Enter a Number:</label>
+            <input id="number"></input>
+            <button id="convert-btn" onclick="converter()">Convert</button>
+        </div>
+        <div id="output"></div>
+
     </div>
-    <div id="output"></div>
-
-</div>
 
 </body>
 

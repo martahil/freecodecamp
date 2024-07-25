@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="styleScrollBar.css" />
-    <title>Document</title>
+    <title>Main Index</title>
 </head>
 
 <body>
@@ -15,46 +14,66 @@
 
         <div class="leftSide">
 
-            <p>Comming soon:</p>
-
-            <ul class="commingSoonList">              
-                <li class="liLeft">Cash Register Project</li>
-                <li class="liLeft">Pokémon Search App Project</li>
+            <p>Apps:</p>
+            <ul class="commingSoonList">       
+                <li class="liLeft">Dragon Repeller Game</li>
+                <li class="liLeft">Calorie Counter</li>
+                <li class="liLeft">Music Player</li>
+                <li class="liLeft">Date Formatter</li>
+                <li class="liLeft">Palindrome Checker</li>
+                <li class="liLeft">Football Team Cards</li>
+                <li class="liLeft">Todo App</li>
+                <li class="liLeft">Decimal to Binary Converter</li>
+                <li class="liLeft">Roman Numeral Converter</li>
+                <li class="liLeft">Number Sorter</li>
+                <li class="liLeft">Statistics Calculator</li>
+                <li class="liLeft">Spam Filter</li>
+                <li class="liLeft">Basic Spreadshit</li>
+                <li class="liLeft">Telephone Number Validator</li>
+                <li class="liLeft">Shopping Cart</li>
+                <li class="liLeft">Platformer Game</li>       
+                <li class="liLeft">Dice Game</li>
+                <li class="liLeft">Pokémon Search App</li>
             </ul>
 
-        </div> <!-- leftSide -->
+        </div>
 
         <div class="rigth">
 
             <div class="top">JavaScript Applications</div>
 
             <div class="mainContent">
-
+                
                 <div class="arrow left">
-                    <img src="Images/leftArrow.svg" alt="" class="imgLeftArrow">
-                </div>
+                    <figure class="figureArrows">
+                    <img src="Images/leftArrow.svg" alt="Previous" class="imgLeftArrow">
+                    <figcaption class="figcaptionArrows">Previous App</figcaption>
+                    </figure>
+                </div>                
+
                 <div class="arrow right">
-                    <img src="Images/rigthArrow.svg" alt="" class="imgRigthArrow">
+                    <figure class="figureArrows">
+                    <img src="Images/rigthArrow.svg" alt="Next" class="imgRigthArrow">
+                    <figcaption class="figcaptionArrows">Next App</figcaption>
+                    </figure>                        
                 </div>
 
                 <div class="individualPost" id="post1">
-
                     <div class="squarePost" id="squarePost1">
                         <a class="linkPost" href="RPG - Dragon Repeller/index.html">Click here <br />
                             to play the game &#8282;&#41;</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Dragon Repeller</h1>
                     <h2>JavaScript applied on a Role Palying Game</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto1()">Learn more</p>
+                        <p onclick="showTxt1()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto1()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt1()"
                                 id="plusCircle1" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div>
+                    </div>
                     <div id="learnMoreTxt1" class="learnMoreTxt">
-                        <p id="textoEscondido1" class="textoEscondido">
+                        <p id="hiddenTxt1" class="hiddenTxt">
                             In this practice project, I learned about fundamental programming concepts in JavaScript by
                             coding
                             my own Role Playing Game. It was approached contents like arrays, strings, objects,
@@ -62,26 +81,24 @@
                             loops, if/else statements, and more.
                         </p>
                     </div>
-
-                </div> <!-- post1 -->
+                </div> 
 
                 <div class="individualPost" id="post2">
                     <div class="squarePost" id="squarePost2">
                         <a class="linkPost" href="Calorie Counter/index.html">Click here <br />
                             to count your <br /> daily calories &#8282;&#41;</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Calorie Counter</h1>
                     <h2>Count your daily compsumtion of calories</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto2()">Learn more</p>
+                        <p onclick="showTxt2()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto2()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt2()"
                                 id="plusCircle2" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt2">
-                        <p id="textoEscondido2" class="textoEscondido">
+                        <p id="hiddenTxt2" class="hiddenTxt">
                             In this calorie counter project, it was explored how to validate user input, perform
                             calculations
                             based on that input, and dynamically update the interface to display the results.
@@ -89,26 +106,24 @@
                             the addEventListener() method, and more.
                         </p>
                     </div>
-
-                </div> <!-- post2 -->
+                </div>
 
                 <div class="individualPost" id="post3">
                     <div class="squarePost" id="squarePost3">
                         <a class="linkPost" href="Music Player/">Click here <br />
                             and enjoy <br /> chill songs &#8282;&#41;</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Music Player</h1>
                     <h2>Basic Music Player with interesting functionalities</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto3()">Learn more</p>
+                        <p onclick="showTxt3()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto3()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt3()"
                                 id="plusCircle3" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt3">
-                        <p id="textoEscondido3" class="textoEscondido">
+                        <p id="hiddenTxt3" class="hiddenTxt">
                             In order to make a Player Music, it was learned some essential string and array methods like
                             the find(),
                             forEach(), map(), and join().
@@ -119,25 +134,23 @@
                             current song.
                         </p>
                     </div>
-
-                </div> <!-- post3 -->
+                </div> 
 
                 <div class="individualPost" id="post4">
                     <div class="squarePost" id="squarePost4">
                         <a class="linkPost" href="Date Formatter/index.html">What is <br />today's date?</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Date Formatter</h1>
                     <h2>Different formats for the current date</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto4()">Learn more</p>
+                        <p onclick="showTxt4()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto4()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt4()"
                                 id="plusCircle4" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div>
                     <div class="learnMoreTxt" id="learnMoreTxt4">
-                        <p id="textoEscondido4" class="textoEscondido">
+                        <p id="hiddenTxt4" class="hiddenTxt">
                             In this challenge, it was explored various methods, formats,
                             and time zones. The project covered JavaScript Date object, including
                             its methods and properties. It was also learn how to correctly format dates.
@@ -145,25 +158,23 @@
                             methods.
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post4 -->
-
-                <div class="individualPost" id="post5" style="margin-right: 100px;">
+                <div class="individualPost" id="post5">
                     <div class="squarePost" id="squarePost5">
                         <a class="linkPost" href="Palindrome Checker/index.html">Sorry, what? <br />Palin... what?</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Palindrome Checker</h1>
                     <h2>Do you know what a palindrome is?</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto5()">Learn more</p>
+                        <p onclick="showTxt5()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto5()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt5()"
                                 id="plusCircle5" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div>
                     <div class="learnMoreTxt" id="learnMoreTxt5">
-                        <p id="textoEscondido5" class="textoEscondido">
+                        <p id="hiddenTxt5" class="hiddenTxt">
                             For this project, it was built an application that checks whether a given word is a
                             palindrome.
                             A palindrome is a word or phrase that can be read the same way forwards and backwards,
@@ -173,26 +184,24 @@
                             and turned everything into the same case (upper case).
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post5 -->
-
-                <div class="individualPost" id="post6" style="margin-right: 100px;">
+                <div class="individualPost" id="post6">
                     <div class="squarePost" id="squarePost6">
                         <a class="linkPost" href="Football Team Cards/index.html"> General info <br> about team
                             sports</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Football Team Cards</h1>
                     <h2>Know more about sports</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto6()">Learn more</p>
+                        <p onclick="showTxt6()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto6()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt6()"
                                 id="plusCircle6" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div>
                     <div class="learnMoreTxt" id="learnMoreTxt6">
-                        <p id="textoEscondido6" class="textoEscondido">
+                        <p id="hiddenTxt6" class="hiddenTxt">
                             One common aspect of building web applications: processing datasets, and then outputting
                             information to the screen.
                             In this sports team cards project, it was used DOM manipulation, object destructuring,
@@ -201,50 +210,46 @@
                             the map() method, and more.
                         </p>
                     </div>
+                </div>
 
-                </div> <!-- post6 -->
-
-                <div class="individualPost" id="post7" style="margin-right: 100px;">
+                <div class="individualPost" id="post7">
                     <div class="squarePost" id="squarePost7">
                         <a class="linkPost" href="Todo App/index.html"> Organize your<br>daily life </a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Todo App</h1>
                     <h2>A App for your personal task management</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto7()">Learn more</p>
+                        <p onclick="showTxt7()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto7()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt7()"
                                 id="plusCircle7" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div>
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt7">
-                        <p id="textoEscondido7" class="textoEscondido">
+                        <p id="hiddenTxt7" class="hiddenTxt">
                             Local storage is a web browser feature that lets web applications store key-value pairs persistently within a user's browser. 
                             This allows web apps to save data during one session, then retrieve it in a later page session.
                             In this TODO application, it was handled form inputs, manage local storage, perform CRUD (Create, Read, Update, Delete) 
                             operations on tasks, implement event listeners, and toggle UI elements.
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post7 -->
-
-                <div class="individualPost" id="post8" style="margin-right: 100px;">
+                <div class="individualPost" id="post8">
                     <div class="squarePost" id="squarePost8">
                         <a class="linkPost" href="DecimalToBinary Converter/index.html"> Explore<br>binary numbers </a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Decimal to Binary Converter</h1>
                     <h2>An easy way to convert numbers</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto8()">Learn more</p>
+                        <p onclick="showTxt8()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto8()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt8()"
                                 id="plusCircle8" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt8">
-                        <p id="textoEscondido8" class="textoEscondido">
+                        <p id="hiddenTxt8" class="hiddenTxt">
                             Recursion is a programming concept where a function calls itself. 
                             This can reduce a complex problem into simpler sub-problems, until they become straightforward to solve.
                             In this project, it was built a decimal-to-binary converter using JavaScript. It covered the 
@@ -252,49 +257,45 @@
                             the recursion process through an animation.
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post8 -->
-
-                <div class="individualPost" id="post9" style="margin-right: 100px;">
+                <div class="individualPost" id="post9">
                     <div class="squarePost" id="squarePost9">
                         <a class="linkPost" href="Roman Num Converter/Index.html"> Know more<br>about Roman numbers</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Roman Numeral Converter</h1>
                     <h2>Convert numbers from 1 to 3999</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto9()">Learn more</p>
+                        <p onclick="showTxt9()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto9()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt9()"
                                 id="plusCircle9" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt9">
-                        <p id="textoEscondido9" class="textoEscondido">
+                        <p id="hiddenTxt9" class="hiddenTxt">
                             For this project, it was built an application that converts integers to Roman numerals.
                             Roman numerals are based on seven symbols (I, V, X, L, C, D, M) and can be written using various combinations 
                             to represent Arabic numerals. 
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post9 -->
-
-                <div class="individualPost" id="post10"  style="margin-right: 100px;">
+                <div class="individualPost" id="post10">
                     <div class="squarePost" id="squarePost10">
                         <a class="linkPost" href="Number Sorter/Index.html">Let's sort <br /> a list of numbers &#8282;&#41;</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Number Sorter</h1>
                     <h2>Explore a number sorter app</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto10()">Learn more</p>
+                        <p onclick="showTxt10()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto10()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt10()"
                                 id="plusCircle10" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt10">
-                        <p id="textoEscondido10" class="textoEscondido">
+                        <p id="hiddenTxt10" class="hiddenTxt">
                             In computer science, there are interesting fundamental sorting algorithms. 
                             In this number sorter project, it was explored how to implement and visualize different 
                             sorting algorithms like bubble sort, selection sort, and insertion sort – all with JavaScript.
@@ -302,26 +303,24 @@
                             and how to apply them to sort numerical data in web applications.
                         </p>
                     </div>
+                </div>
 
-                </div> <!-- post10 -->
-
-                <div class="individualPost" id="post11"  style="margin-right: 100px;">
+                <div class="individualPost" id="post11">
                     <div class="squarePost" id="squarePost11">
                         <a class="linkPost" href="Statistics Calculator/Index.html">Mean, median, mode,  <br />
                             range, variance and<br />standard deviation</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Statistics Calculator</h1>
                     <h2>This will help you with your calculations</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto11()">Learn more</p>
+                        <p onclick="showTxt11()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto11()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt11()"
                                 id="plusCircle11" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt11">
-                        <p id="textoEscondido11" class="textoEscondido">
+                        <p id="hiddenTxt11" class="hiddenTxt">
                             At this stage, it is possible to get comfortable with array manipulation methods, 
                             such as map(), reduce(), and filter().
                             In this statistics calculator project, experience was gain with handling user input, DOM manipulation, 
@@ -329,26 +328,24 @@
                             mode, variance, and standard deviation.                            
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post11 -->
-
-                <div class="individualPost" id="post12"  style="margin-right: 100px;">
+                <div class="individualPost" id="post12">
                     <div class="squarePost" id="squarePost12">
                         <a class="linkPost" href="Spam Filter/Index.html">Do you want <br/>
                             to get rid of spams?</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Spam Filter</h1>
                     <h2>Detect if a message has spam elements</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto12()">Learn more</p>
+                        <p onclick="showTxt12()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto12()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt12()"
                                 id="plusCircle12" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div>
                     <div class="learnMoreTxt" id="learnMoreTxt12">
-                        <p id="textoEscondido12" class="textoEscondido">
+                        <p id="hiddenTxt12" class="hiddenTxt">
                             Regular expressions, often shortened to "regex" or "regexp", are patterns that help programmers match, 
                             search, and replace text. Regular expressions are powerful, but can be difficult to understand 
                             because they use so many special characters.
@@ -356,26 +353,24 @@
                             negative lookaheads, and other techniques to match any text you want.                                                      
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post12 -->
-
-                <div class="individualPost" id="post13"  style="margin-right: 100px;">
+                <div class="individualPost" id="post13">
                     <div class="squarePost" id="squarePost13">
                         <a class="linkPost" href="Spreadsheet/index.html">Test a simple<br/>
                             spreadshit here</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Basic Spreadshit</h1>
                     <h2>Division, multiplication, addition and subtraction</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto13()">Learn more</p>
+                        <p onclick="showTxt13()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto13()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt13()"
                                 id="plusCircle13" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt13">
-                        <p id="textoEscondido13" class="textoEscondido">
+                        <p id="hiddenTxt13" class="hiddenTxt">
                             Functional Programming is a popular approach to software development. In Functional Programming, 
                             developers organize code into smaller functions, then combine those functions to build complex programs.
                             In this spreadsheet application project, it was learnt about parsing and evaluating mathematical expressions, 
@@ -384,26 +379,24 @@
                             This project convered concepts like the map() method, find() method, parseInt(), the includes() method.                           
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post13 -->
-
-                <div class="individualPost" id="post14"  style="margin-right: 100px;">
+                <div class="individualPost" id="post14">
                     <div class="squarePost" id="squarePost14">
                         <a class="linkPost" href="Telephone Number Validator/Index.html">Is this a <br/>
                             US Telephone Number?</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Telephone Number Validator</h1>
                     <h2>Be aware of International Telephone Numbers</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto14()">Learn more</p>
+                        <p onclick="showTxt14()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto14()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt14()"
                                 id="plusCircle14" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt14">
-                        <p id="textoEscondido14" class="textoEscondido">                            
+                        <p id="hiddenTxt14" class="hiddenTxt">                            
                             For this project, it was build an application that checks if a number is a valid United States phone number.
                             In the US, phone numbers can be formatted in many ways. Here are some examples of valid formats for US phone numbers:
                             1 555-555-5555 /
@@ -416,26 +409,24 @@
                             Note that the area code is required. Also, if the country code is provided, it must be verified if the country code is 1.                            
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post14 -->
-
-                <div class="individualPost" id="post15"  style="margin-right: 100px;">
+                <div class="individualPost" id="post15">
                     <div class="squarePost" id="squarePost15">
                         <a class="linkPost" href="Shopping Cart/Index.html">Let's Go <br/>
                             Shopping!</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Shopping Cart</h1>
                     <h2>Add or delete items in your cart</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto15()">Learn more</p>
+                        <p onclick="showTxt15()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto15()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt15()"
                                 id="plusCircle15" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt15">
-                        <p id="textoEscondido15" class="textoEscondido">                            
+                        <p id="hiddenTxt15" class="hiddenTxt">                            
                             OOP, or Object Oriented Programming, is one of the major approaches to the software development process. 
                             In OOP, developers use objects and classes to structure their code.
                             In this shopping cart project, it was learnt how to define classes and use them. It was created class 
@@ -443,51 +434,47 @@
                             This project covered concepts like the ternary operator, the spread operator, the this keyword, and more.                       
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post15 -->
-
-                <div class="individualPost" id="post16"  style="margin-right: 100px;">
+                <div class="individualPost" id="post16">
                     <div class="squarePost" id="squarePost16">
                         <a class="linkPost" href="Platformer Game/Index.html">Let's <br/>
                             have fun &#8282;&#41;</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Platformer Game</h1>
                     <h2>Play a platformer game made with js</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto16()">Learn more</p>
+                        <p onclick="showTxt16()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto16()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt16()"
                                 id="plusCircle16" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div>
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt16">
-                        <p id="textoEscondido16" class="textoEscondido">                          
+                        <p id="hiddenTxt16" class="hiddenTxt">                          
                             Coding a game is a great way to grasp fundamental programming principles, while also creating an interactive gaming experience.
                             In this platformer game project, it was learnt about classes, objects, inheritance, and encapsulation. 
                             It was also learnt how to design and organize game elements efficiently and gain insights into problem-solving and code reusability.                 
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post16 -->
-
-                <div class="individualPost" id="post17"  style="margin-right: 100px;">
+                <div class="individualPost" id="post17">
                     <div class="squarePost" id="squarePost17">
                         <a class="linkPost" href="Dice Game/index.html">Are you addicted <br/>
                             in dice games?</a>
-                    </div> <!-- squarePost -->
-
+                    </div> 
                     <h1>Dice Game</h1>
                     <h2>Let's roll dice</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto17()">Learn more</p>
+                        <p onclick="showTxt17()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto17()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt17()"
                                 id="plusCircle17" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div> 
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt17">
-                        <p id="textoEscondido17" class="textoEscondido">                          
+                        <p id="hiddenTxt17" class="hiddenTxt">                          
                             Algorithmic thinking involves the ability to break down complex problems into a sequence of well-defined, step-by-step instructions.
                             In this Dice game project, it was learnt how to manage game state, implement game logic for rolling dice, keeping score, 
                             and applying rules for various combinations.
@@ -495,57 +482,53 @@
                             user interface dynamically based on game state.              
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post17 -->
-
-                <div class="individualPost" id="post18"  style="margin-right: 100px;">
+                <div class="individualPost" id="post18">
                     <div class="squarePost" id="squarePost18">
                         <a class="linkPost" href="Pokémon Search App/index.html">Let's catch <br/>
                             Pokémon!</a>
-                    </div> <!-- squarePost -->
-
+                    </div>
                     <h1>Pokémon Search App</h1>
                     <h2>Stats of each Pokémon</h2>
                     <div class="learnMore">
-                        <p onclick="expandirTexto18()">Learn more</p>
+                        <p onclick="showTxt18()">Learn more</p>
                         <div class="plusCircle">
-                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="expandirTexto18()"
+                            <img class="iconPlus" src="Images/plusCircle.png" alt="" onclick="showTxt18()"
                                 id="plusCircle18" />
-                        </div> <!-- plusCircle -->
-                    </div> <!-- learnMore -->
+                        </div>
+                    </div> 
                     <div class="learnMoreTxt" id="learnMoreTxt18">
-                        <p id="textoEscondido18" class="textoEscondido">  
+                        <p id="hiddenTxt18" class="hiddenTxt">  
                             In this project, it was built an app that searches for Pokémon by name or ID and display the results to the user. 
                             To retrieve the Pokémon data and images, it was used freeCodeCamp's PokéAPI Proxy.
                             It will be presented the name, stats and picture of the searched Pokémon.                                         
                         </p>
                     </div>
+                </div> 
 
-                </div> <!-- post18 -->
+            </div> 
 
-            </div> <!-- mainContent -->
+        </div> 
 
-        </div> <!-- right -->
-
-    </div> <!-- leftAndRight -->
-
+    </div>
 
     <div class="bottom">
 
         <p>Copyright &copy; 2024 - by Marta Hilgert</p>
         <p>This applications were based on freeCodeCamp courses</p>
         <div class="footerLinks">
-            <img src="Images/freeCodeCampLogo314px.png" alt="" style="height: 36px;">
+            <img src="Images/freeCodeCampLogo314px.png" alt="Free Code Camp Logo" style="height: 36px;">
             <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
                 target="_blank">freeCodeCamp</a>
             <br>
         </div>
         <div class="footerLinks">
-            <img src="Images/githubLogo.png" style="height: 30px;">
+            <img src="Images/githubLogo.png" alt="Git Hub Logo"  style="height: 30px;">
             <a href="https://github.com/martahil/freecodecamp" target="_blank">GitHub</a>
         </div>
 
-    </div> <!-- bottom -->
+    </div>
 
 </body>
 

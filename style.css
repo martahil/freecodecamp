@@ -1,21 +1,16 @@
 @font-face {
-    font-family: 'fonteTituloPrincipal';
+    font-family: 'mainTitleFont';
     src: url("Fonts/GothamBold.ttf");
 }
 
 @font-face {
-    font-family: 'fonteBase';
+    font-family: 'basicFont';
     src: url("Fonts/GothamLight.ttf");
 }
 
 @font-face {
     font-family: 'descriptionFont';
     src: url("Fonts/Gotham-XLight.otf");
-}
-
-@font-face {
-    font-family: 'learnMoreFont';
-    src: url("Fonts/Gotham-Thin.otf");
 }
 
 @font-face {
@@ -37,7 +32,7 @@ html {
     height: 92%;
     width: 100%;
     display: flex;
-    font-family: fonteBase;
+    font-family: basicFont;
 }
 
 .leftSide {
@@ -53,20 +48,19 @@ html {
     padding-left: 39px;
     padding-top: 70px;
     font-weight: bold;
-    font-size: 110%; /*65%*/
+    font-size: 110%;
     display: flex;
     white-space: nowrap;
 }
 
 .commingSoonList li {
     font-family: descriptionFont;
-    font-weight: bold;  
+    font-weight: bold;
     list-style: none;
-    font-size: 80%; /*55%*/
-    line-height: 36px; /*18px*/
+    font-size: 80%;
+    line-height: 36px;
     display: flex;
     white-space: nowrap;
-    /* padding-left: 0px; */
 }
 
 .rigth {
@@ -78,12 +72,10 @@ html {
 .top {
     background-color: #121212;
     height: 25%;
-    /* width: 100%; */
-    font-family: fonteTituloPrincipal;
+    font-family: mainTitleFont;
     font-size: 75px;
     display: flex;
-    /* flex-wrap: nowrap; */
-    white-space: nowrap;    
+    white-space: nowrap;
     align-items: center;
     padding-left: 100px;
 }
@@ -92,53 +84,79 @@ html {
     background-color: #262626;
     height: 75%;
     width: 100%;
-    display: flex;    
+    display: flex;
+}
+
+.figureArrows {
+    position: relative;
+    display: inline-block;
+    font-family: basicFont;
+    font-size: 12px;
+}
+
+.figcaptionArrows {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 253, 253, 0.7);
+    color: #121212;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.arrow.left figure:hover figcaption, .arrow.right figure:hover figcaption {
+    opacity: 1;
 }
 
 .individualPost {
     margin-top: 50px;
 }
 
-#post1 {
+#post1,
+#post2,
+#post3,
+#post4,
+#post5,
+#post6,
+#post7,
+#post8,
+#post9,
+#post10,
+#post11,
+#post12,
+#post13,
+#post14,
+#post15,
+#post16,
+#post17 {
     margin-left: 100px;
 }
 
-#post2 {
-    margin-left:100px;
-}
-
-#post3 {
-    margin-left:100px;
-}
-
-#post4 {
-    margin-left:100px;
-}
-
-#post5 {
-    margin-left:100px;
+#post18 {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .squarePost {
-    height: 220px;/*250*/
-    width: 380px; /*400*/
+    height: 220px;
+    width: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .linkPost {
-    font-family: fonteBase;
-    font-size: 160%; /*200*/
+    font-family: basicFont;
+    font-size: 160%;
     color: #FEFEFE;
     text-align: center;
-    /* padding-top: 15%; */
 }
 
 .squarePost a {
     text-decoration: none;
-    /* text-align: center;
-    display: block; */
 }
 
 .squarePost a:hover {
@@ -162,7 +180,7 @@ html {
 }
 
 #squarePost5 {
-background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+    background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
 }
 
 #squarePost6 {
@@ -190,15 +208,17 @@ background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%
 }
 
 #squarePost12 {
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);    
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 #squarePost13 {
-    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    ;
 }
 
 #squarePost14 {
-    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    ;
 }
 
 #squarePost15 {
@@ -214,17 +234,17 @@ background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%
 }
 
 #squarePost18 {
-    background-image: linear-gradient(to top, #4b6584 0%, #d1d8e0  100%);
+    background-image: linear-gradient(to top, #4b6584 0%, #d1d8e0 100%);
 }
 
 h1 {
-    font-size: 120%; /*140*/
+    font-size: 120%;
     margin-top: 20px;
 }
 
 h2 {
     font-family: descriptionFont;
-    font-size: 80%; /*100*/
+    font-size: 80%;
 }
 
 .learnMore {
@@ -237,21 +257,20 @@ h2 {
 .learnMore p {
     font-family: descriptionFont;
     font-weight: bold;
-    font-size: 90%; /*100*/
+    font-size: 90%;
 }
 
 .plusCircle {
     flex-shrink: 0;
-    /* height: 100%; */
-    width: 20px; /*20*/
-    height: 20px; /*20*/
+    width: 20px;
+    height: 20px;
     display: flex;
     padding-left: 10px;
 }
 
-.textoEscondido {
+.hiddenTxt {
     font-family: generalText;
-    font-size: 80%; /*90*/
+    font-size: 80%;
     text-align: justify;
     text-indent: 30px;
     display: none;
@@ -264,13 +283,10 @@ h2 {
     text-align: center;
     background-color: #121212;
     font-family: generalText;
-    /* font-weight: bold; */
-    font-size: 80%; /*90*/
+    font-size: 80%;
     padding-top: 1.0%;
     padding-bottom: 3%;
-    line-height: 0  px;
-    /* display: flex;
-    flex-direction: column; */
+    line-height: 0 px;
 }
 
 .bottom p {
@@ -281,7 +297,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: #FEFEFE; */
 }
 
 .footerLinks a {
@@ -294,17 +309,15 @@ h2 {
 
 /*Scroll Bar*/
 .mainContent {
-    /* width: 800px;  */
     overflow: hidden;
-    /* white-space: nowrap; */
-    position: relative; 
+    position: relative;
     margin: 0 auto;
 }
 
 .scrollable-div {
     display: inline-block;
     width: 300px;
-    height: 200px; 
+    height: 200px;
     margin-right: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -321,7 +334,7 @@ h2 {
 }
 
 .arrow.left {
-    left:20.5%;  
+    left: 20.5%;
 }
 
 .arrow.right {
@@ -329,15 +342,13 @@ h2 {
 }
 
 .imgRigthArrow {
-    height: 50px;   
+    height: 50px;
     width: 50px;
 }
 
 .imgLeftArrow {
-    height: 50px; 
+    height: 50px;
     width: 50px;
 }
+
 /*Scroll Bar*/
-
-
-
