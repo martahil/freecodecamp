@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
-    background-color: #1b1b32;    
+    background-color: #1b1b32;
 }
 
 main {
@@ -136,7 +136,7 @@ td {
     padding: 8px;
     text-align: center;
 }
-    
+
 /* Autocomplete: */
 
 .autocomplete {
