@@ -109,6 +109,21 @@ function showTxt18() {
     showInfo();
 }
 
+function showTxt19() {
+    postController = 19;
+    showInfo();
+}
+
+function showTxt20() {
+    postController = 20;
+    showInfo();
+}
+
+function showTxt21() {
+    postController = 21;
+    showInfo();
+}
+
 function showInfo() {
     var text = document.getElementById(`hiddenTxt${postController}`);
     var learnMoreTxt = document.getElementById(`learnMoreTxt${postController}`);

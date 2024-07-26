@@ -48,7 +48,7 @@ html {
     padding-left: 39px;
     padding-top: 70px;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 100%;
     display: flex;
     white-space: nowrap;
 }
@@ -57,8 +57,8 @@ html {
     font-family: descriptionFont;
     font-weight: bold;
     list-style: none;
-    font-size: 80%;
-    line-height: 36px;
+    font-size: 75%;
+    line-height: 30px;
     display: flex;
     white-space: nowrap;
 }
@@ -140,11 +140,14 @@ html {
 #post14,
 #post15,
 #post16,
-#post17 {
+#post17,
+#post18,
+#post19,
+#post20 {
     margin-left: 100px;
 }
 
-#post18 {
+#post21 {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -243,7 +246,19 @@ html {
 }
 
 #squarePost18 {
-    background-image: linear-gradient(to top, #4b6584 0%, #d1d8e0 100%);
+    background-image: linear-gradient(to top, #9b59b6 0%, #3498db 100%);
+}
+
+#squarePost19 {
+    background-image: linear-gradient(to top, #81ecec 0%, #1abc9c 100%);
+}
+
+#squarePost20 {
+    background-image: linear-gradient(to top, #f368e0 0%, #ff9ff3 100%);
+}
+
+#squarePost21 {
+    background-image: linear-gradient(to top, #5f27cd 0%, #341f97 100%);
 }
 
 h1 {
