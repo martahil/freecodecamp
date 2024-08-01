@@ -13,11 +13,6 @@
     src: url("Fonts/Gotham-XLight.otf");
 }
 
-@font-face {
-    font-family: 'generalText';
-    src: url("fonts/GothamBook.ttf");
-}
-
 body,
 html {
     height: 100%;
@@ -293,7 +288,7 @@ h2 {
 }
 
 .hiddenTxt {
-    font-family: generalText;
+    font-family: basicFont;
     font-size: 80%;
     text-align: justify;
     text-indent: 30px;
@@ -306,7 +301,7 @@ h2 {
     width: 100%;
     text-align: center;
     background-color: #121212;
-    font-family: generalText;
+    font-family: basicFont;
     font-size: 80%;
     padding-top: 1.0%;
     padding-bottom: 3%;
